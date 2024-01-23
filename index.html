@@ -19,6 +19,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'templed-paragraph': '#ffffff99',
+                    'bg-templed-title': '#131318',
                         'btn-primary': '#FF4240',
                     }
                 }
@@ -31,17 +33,12 @@
         }
     </style>
 </head>
-
-
-
-<body class="font-manrope">
+<body class="font-manrope  ">
     <header>
-
-
-        <!-- navbar -->
+      <!-- navbar -->
         <nav>
-            <div class="navbar bg-base-100 flex justify-around">
-                <div>
+            <div class=" navbar bg-base-100 mx-auto lg:my-16 my-8">
+                <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -52,7 +49,7 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-base w-52">
-                            <li class="text-btn-primary"><a>Home</a></li>
+                            <li  class="text-btn-primary"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -63,18 +60,50 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
-                        <li><a>Home</a></li>
+                        <li class="text-btn-primary"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <a class="btn btn-error text-white bg-btn-primary">Get Ticket</a>
+                <div class="gap-4 flex navbar-end ">
+                    <img class=" hidden lg:block" src="Images/Frame.png" alt="">
+                    <a class="btn btn-error text-white bg-btn-primary text-xl font-bold">Get Ticket</a>
                 </div>
             </div>
         </nav>
+
+
+        <!-- banner images and slider -->
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="carousel w-full lg:h-[650px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/1.png" class="w-full object-cover lg:rounded-xl rounded-xl" />
+                  <div class="absolute gap-12 bottom-10 left-10 ">
+                    <a href="#slide2"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
+                    <a href="#slide2"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/2.png" class="w-full object-cover lg:rounded-2xl rounded-xl" />
+                  <div class="absolute bottom-10 left-10 gap-10">
+                    <a href="#slide1"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
+                    <a href="#slide1"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
+                  </div>
+                </div>
+            </div>
+
+            <!-- banner Template -->
+            <div class="container mx-auto lg:mb-24 mb-10 mt-3">
+                <div
+        class="card lg:w-[556px] w-[full] md:w-[60%] mx-5 bg-bg-templed-title lg:absolute md:absolute md:bottom-[25%] md:right-[12%] lg:z-10 lg:left-[55%] lg:bottom-[0%]">
+        <div class="card-body p-4 lg:p-8 text-[var(--grey)] ">
+          <h2 class="card-title font-extrabold text-white  text-lg">Meet all the heroes from the field</h2>
+          <p class="font-medium text-sm tex text-templed-paragraph">If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed. </p>
+        </div>
+      </div>
+            </div>
 
     </header>
     <main>
