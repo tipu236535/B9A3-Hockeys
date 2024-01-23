@@ -20,8 +20,9 @@
                     colors: {
                         clifford: '#da373d',
                         'templed-paragraph': '#ffffff99',
-                    'bg-templed-title': '#131318',
+                        'bg-templed-title': '#131318',
                         'btn-primary': '#FF4240',
+                        'professional-description-color': '#13131899',
                     }
                 }
             }
@@ -33,9 +34,10 @@
         }
     </style>
 </head>
+
 <body class="font-manrope  ">
     <header>
-      <!-- navbar -->
+        <!-- navbar -->
         <nav>
             <div class=" navbar bg-base-100 mx-auto lg:my-16 my-8">
                 <div class="navbar-start">
@@ -49,7 +51,7 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-base w-52">
-                            <li  class="text-btn-primary"><a>Home</a></li>
+                            <li class="text-btn-primary"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -80,33 +82,88 @@
             <div class="carousel w-full lg:h-[650px]">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/images/1.png" class="w-full object-cover lg:rounded-xl rounded-xl" />
-                  <div class="absolute gap-12 bottom-10 left-10 ">
-                    <a href="#slide2"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
-                    <a href="#slide2"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
-                  </div>
+                    <div class="absolute gap-12 bottom-10 left-10 ">
+                        <a href="#slide2"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
+                        <a href="#slide2"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
+                    </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="/images/2.png" class="w-full object-cover lg:rounded-2xl rounded-xl" />
-                  <div class="absolute bottom-10 left-10 gap-10">
-                    <a href="#slide1"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
-                    <a href="#slide1"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
-                  </div>
+                    <div class="absolute bottom-10 left-10 gap-10">
+                        <a href="#slide1"><button class="btn btn-circle btn-outline bg-black text-white">❮</button></a>
+                        <a href="#slide1"> <button class="btn btn-circle btn-outline bg-black text-white">❯</button></a>
+                    </div>
                 </div>
             </div>
 
             <!-- banner Template -->
             <div class="container mx-auto lg:mb-24 mb-10 mt-3">
                 <div
-        class="card lg:w-[556px] w-[full] md:w-[60%] mx-5 bg-bg-templed-title lg:absolute md:absolute md:bottom-[25%] md:right-[12%] lg:z-10 lg:left-[55%] lg:bottom-[0%]">
-        <div class="card-body p-4 lg:p-8 text-[var(--grey)] ">
-          <h2 class="card-title font-extrabold text-white  text-lg">Meet all the heroes from the field</h2>
-          <p class="font-medium text-sm tex text-templed-paragraph">If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed. </p>
-        </div>
-      </div>
+                    class="card lg:w-[556px] w-[full] md:w-[60%] mx-5 bg-bg-templed-title lg:absolute md:absolute md:bottom-[25%] md:right-[12%] lg:z-10 lg:left-[55%] lg:bottom-[0%]">
+                    <div class="card-body p-4 lg:p-8 text-[var(--grey)] ">
+                        <h2 class="card-title font-extrabold text-white  text-lg">Meet all the heroes from the field
+                        </h2>
+                        <p class="font-medium text-sm tex text-templed-paragraph">If you have the opportunity to play
+                            this game of life you need to appreciate every moment. A lot of people don't appreciate the
+                            moment until it's passed. </p>
+                    </div>
+                </div>
             </div>
-
     </header>
+    <!-- main section start -->
     <main>
+        <!-- Professional Hockeys Club section -->
+        <section class="container mx-auto">
+            <div class="border border-dashed border-y-2 text-center mx-6 mb-6 lg:12">
+                <h1 class="text-4xl font-extrabold text-bg-templed-title lg:mb-6 lg:mt-8 mt-6 mb-4">Professional Hockeys
+                    Club</h1>
+                <p
+                    class="lg:[600px] text-professional-description-color lg:text-base font-medium text-xs lg:mt-8 mt-6 mb-4 lg:mx-auto ">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna
+                    in sit nullam proin. </p>
+            </div>
+            <!-- presentness way -->
+            <div class="flex flex-col lg:flex-row justify-center gap-8 mx-5">
+
+
+                <div class="lg:w-64 text-center">
+                    <div class="text-[#FF4240] radial-progress relative bg-[#E7E7E8] text-primary text-3xl font-extrabold"
+                        style="--value:87; --size:120px; --thickness: 11px;" role="progressbar"><span
+                            class="w-[98px] h-[98px] flex items-center justify-center bg-white rounded-full text-dark3">87%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold  mb-4">Prayer Facility</h3>
+                    <p class="lg:text-base text-base font-normal w-60 lg:w-full mx-auto">Amet consectetur. Condimentum
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="lg:w-64 text-center">
+                    <div class="text-[#49D293] radial-progress relative bg-[#E7E7E8] text-primary text-3xl font-extrabold"
+                        style="--value:95; --size:120px; --thickness: 11px;" role="progressbar"><span
+                            class="w-[98px] h-[98px] flex items-center justify-center bg-white rounded-full text-dark3">95%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold  mb-4">Experienced Coach</h3>
+                    <p class="lg:text-base text-base font-normal w-60 lg:w-full mx-auto">Amet consectetur. Condimentum
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="lg:w-64 text-center">
+                    <div class="text-[#FFB546] radial-progress relative bg-[#E7E7E8] text-primary text-3xl font-extrabold"
+                        style="--value:90; --size:120px; --thickness: 11px;" role="progressbar"><span
+                            class="w-[98px] h-[98px] flex items-center justify-center bg-white rounded-full text-dark3">90%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold  mb-4">Senior Player</h3>
+                    <p class="lg:text-base text-base font-normal w-60 lg:w-full mx-auto">Amet consectetur. Condimentum
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="lg:w-64 text-center">
+                    <div class="text-[#4C8DF1] radial-progress relative bg-[#E7E7E8] text-primary text-3xl font-extrabold"
+                        style="--value:80; --size:120px; --thickness: 11px;" role="progressbar"><span
+                            class="w-[98px] h-[98px] flex items-center justify-center bg-white rounded-full text-dark3">80%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold  mb-4">Training Ground</h3>
+                    <p class="lg:text-base text-base font-normal w-60 lg:w-full mx-auto">Amet consectetur. Condimentum
+                        dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
